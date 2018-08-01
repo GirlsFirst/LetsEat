@@ -1,19 +1,115 @@
 <html>
 <html lang="en">
 <link rel= "stylesheet" href="LetsEat.css">
+<script src= "LetsEat.js"> </script>
 <header><h1><center> Let's Eat! </header></h1></center>
-<h2> <center>INSERT SLOGAN HERE </h2> </center>
+<h2> <center>You Choose? No, We'll Choose. </h2> </center>
 <p><center>
-         <label>Tell Us Your Zip Code:</label>
+         <label>Tell Us Your State/District:</label>
          <input type = "text"
                 id = "myText"
                 value = "text here" />
        </p></center>
 <p><center>
-<p><center>     <h3> within </h3>
-        <input type = "text"
-               id = "myText"
-               value = "miles" />
-        <h3> miles: </h3>
-      </p></center>
-</html>
+<p><center>
+  <style>
+body {
+    background-image: url("foodbackground.jpg");
+    height: 100%
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+}
+</style>
+</head>
+<body>
+
+
+      <style>
+      .dropbtn {
+          background-color: red ;
+          color: white;
+          padding: 16px;
+          font-family: Courier;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+      }
+
+      .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+      }
+
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #f1f1f1}
+
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+          background-color: #FFFF00;
+      }
+      </style>
+      </head>
+      <body>
+
+      <p>How much are you willing to spend?</p>
+      <div class="dropdown">
+        <center><button class="dropbtn">Budget</button></center>
+        <div class="dropdown-content">
+          <a href="#">$</a>
+          <a href="#">$$</a>
+          <a href="#">$$$</a>
+        </div>
+      </div>
+      <p>Specify what kind of food you are in the mood for.</p>
+      <div class="dropdown">
+        <center><button class="dropbtn">Types of Food</button></center>
+        <div class="dropdown-content">
+          <p id="Italian" onclick="myFunction()">You Chose Italian Food!</p>
+          <a href="Latin/Hispanic"> Latin/Hispanic</a>
+          <a href="American">American</a>
+          <a href="Asian">Asian</a>
+          <a href= "French">French</a>
+          <a href= "Random"> Random Choice</a>
+
+        </div>
+
+            </html>
+<!--We use href="#" for test links. In a real web site this would be URLs.>
+Asian Cuisine:
+<a href="https://www.perrysam.com">Perry's Sushi</a>   $$
+  <a href="https://sushitaro.com/">Sushi Taro</a>       $$$
+  <a href="http://www.kazsushi.com/">Kaz Sushi Bistro</a> $$
+  <a href="https://www.gakyudc.com/">Sushi Gakyu</a>    $$$
+  <a href="http://www.rakuasiandining.com/cathedral-heights/">Raku</a> $$
+  <a href="https://eatburedo.com/">Buredo</a> $
+  <a href="https://www.yosakusushi.com/">Yosaku</a> $$
+  <a href="https://www.bluefingeorgetown.com">Bluefin Sushi</a> $
+  <a href="http://www.donburidc.com/">Donburi</a> $
+  <a href="https://www.yobifresh.com/">Yobi</a> $
+
