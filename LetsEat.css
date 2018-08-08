@@ -7,40 +7,46 @@
   p{
     font-family: impact;
     color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #C60606;
+    letter-spacing: 3px
   }
 h1{
-  padding-top: 100px;
+  padding-top: 150px;
   font-family: Impact;
   color: white;
+  letter-spacing: 3px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #C60606;
+  -webkit-text-stroke-color: #0C0000;
 }
-p1{
+p{
   font-family: Impact;
   color: white;
+  letter-spacing: 3px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #C60606;
+  -webkit-text-stroke-color: #0C0000;
 
 }
 h2{
   color: white;
   font-family:Impact;
+  letter-spacing: 3px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #C60606;
+  -webkit-text-stroke-color: #0C0000;
 }
 
 label{
   color: white;
   font-family:Impact;
+  letter-spacing: 3px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #C60606;
+  -webkit-text-stroke-color: #0C0000;
 }
 
 body{
   color:#C60606;
   font-family:Impact;
+  letter-spacing: 3px;
+  font-size: 22px;
+
 }
 
 div{}
