@@ -6,6 +6,9 @@ var rest_list = [["Toro Toro", "$$", "https://www.eattorotoro.com/", "Latin/Hisp
 ["Del Campo", "$$$", "http://www.delcampodc.com/", "Latin/Hispanic"],
 ["Chipotle","$", "https://www.chipotle.com/", "Latin/Hispanic"],
 ["Uncle Juilo's","$", "https://www.unclejulios.com/", "Latin/Hispanic"],
+["District Taco", "$", "https://www.districttaco.com/", "Latin/Hispanic"],
+["Fogo de Chao", "$$$", "https://fogodechao.com/", "Latin/Hispanic"],
+["Claudia's", "$$$", "http://www.claudiassteakhouse.com/", "Latin/Hispanic"],
 ["Perry’s Sushi", "$$","https://www.perrysam.com", "Asian"],
 ["Sushi Taro", "$$$", "https://sushitaro.com", "Asian"],
 ["Kaz Sushi Bistro", "$$", "http://www.kazsushi.com/", "Asian"],
@@ -16,6 +19,7 @@ var rest_list = [["Toro Toro", "$$", "https://www.eattorotoro.com/", "Latin/Hisp
 [ "Bluefin Sushi", "$", "https://www.bluefingeorgetown.com", "Asian"],
 ["Donburi", "$", "http://www.donburidc.com/", "Asian"],
 ["Yobi", "$", "https://www.yobifresh.com/", "Asian"],
+[""]
 ["Obelisk" , "$$$", "http://obeliskdc.com/",  "Italian"],
 ["Al Tiramisu", "$$$", "https://www.altiramisu.com/", "Italian"],
 ["Urbana", "$$", "http://www.urbanadc.com/en-us/index.html", "Italian"],
@@ -61,7 +65,9 @@ function userInput(price, food) {
   for (i = 0; i < rest_list.length; i++) {
     if (price == rest_list[i][1]) {
       if (food == rest_list[i][3]){
-        document.getElementById('restaurant').innerHTML = rest_list[i][0] + " " + rest_list[i][2];
+        var str = rest_list[i][0];
+  var result = str.link(rest_list[i][2]);
+        document.getElementById('restaurant').innerHTML = result;
         break;
       }
     }
