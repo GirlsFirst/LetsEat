@@ -3,7 +3,7 @@
 <link rel= "stylesheet" href="LetsEat.css">
 <script src= "final.js"> </script>
 <header><h1><center> <b>Let's Eat!</b> </header></h1></center>
-<h2> <center><b>You Choose? No, We'll Choose. </b></h2> </center>
+<h2> <center><b>You Choose? No, We Choose. </b></h2> </center>
 <p><center>
          <label><b>Tell Us Your State/District:</b></label>
          <input type = "text"
@@ -15,7 +15,7 @@
   <style>
 body {
     background-image: url("foodbackground.jpg");
-    height: 100%
+    height: 100%;
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,6 +26,7 @@ body {
 </head>
 <body>
   <div class="dropdown">
+      <p><b>Specify your price limit.</b></p>
     <select name="price" id="price">
     <div class="dropdown-content">
       <option value= "$"> $ </option>
@@ -41,7 +42,7 @@ body {
         </select>
         <button onClick = "innerHTML = document.getElementById('price').value"> Select </button>
 
-      <p><b>Specify what kind of food you are in the mood for.</b></p>
+      <p><b>Specify your food preference.</b></p>
         <select name="food" id ="food">
           <div class="dropdown">
             <button class="dropbtn">Dropdown</button>
@@ -59,5 +60,6 @@ body {
         <button onClick = "userInput(document.getElementById('price').value, document.getElementById('food').value)"> Enter </button>
         <div id = "restaurant"> </div>
 
-
+      </body>
             </html>
+
